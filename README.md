@@ -181,27 +181,83 @@ If you are brand new to Tableau (download free **Tableau Public** or **Tableau D
 
 ---
 
-### Sheet 8: `KPI Headline Cards` *(Executive Metrics)*
-Create 1 clean KPI sheet (or 3 mini sheets) for the top banner of your dashboard:
-1. Click **New Worksheet** → rename to **`KPI Nighttime Warming`**.
-2. Create a Calculated Field named `KPI Text`:
-   * Formula: `"+1.25°C Nighttime Rise | -29.7% Cooling Drop | +6.36°C New Construction Jump"`
-3. Drag **`KPI Text`** onto **`Text`** on the Marks card.
-4. Click **`Text`** → click the **`...`** button → make the numbers large & bold (20pt), labels smaller (11pt), centered.
-5. In the top toolbar dropdown (currently *Standard*), change to **`Entire View`**.
+### Sheet 8: `Executive KPI Cards` *(3 Sleek Modular Cards)*
+
+Instead of a single cramped line of text, build **3 modern, professional KPI cards** that sit side-by-side across the top of your dashboard (like an executive Bloomberg/Stripe analytics header).
+
+#### Card 1: `KPI 1 - Night Warming`
+1. Click **New Worksheet** → rename to **`KPI 1 - Night Warming`**.
+2. Top menu: **Analysis → Create Calculated Field...**
+   * Name: `KPI 1 Value` → Formula: `"+1.25°C"` → click **OK**.
+3. Drag **`KPI 1 Value`** onto **`Text`** on the Marks card.
+4. Click **`Text`** on the Marks card → click the **`...`** (Edit Text) button:
+   * Replace the text box with:
+     ```text
+     ▲ +1.25°C
+     NIGHTTIME LST RISE
+     2001–05 (23.7°C) → 2021–25 (25.0°C)
+     ```
+   * **Formatting:**
+     * Line 1 (`▲ +1.25°C`): **22pt, Bold, Bright Red/Coral (`#FF4B2B`)**
+     * Line 2 (`NIGHTTIME LST RISE`): **9pt, Bold, Dark Gray / White (`#666666`), Uppercase**
+     * Line 3 (`2001–05...`): **8pt, Regular, Muted Gray (`#999999`)**
+     * Alignment: **Center**
+5. Change toolbar dropdown from *Standard* to **`Entire View`**.
+
+---
+
+#### Card 2: `KPI 2 - Cooling Collapse`
+1. Click **New Worksheet** → rename to **`KPI 2 - Cooling Collapse`**.
+2. Create Calculated Field `KPI 2 Value` → Formula: `"-29.7%"` → **OK**.
+3. Drag **`KPI 2 Value`** onto **`Text`** on the Marks card.
+4. Click **`Text`** → click **`...`** → enter:
+   ```text
+   ▼ −29.7%
+   OVERNIGHT COOLING COLLAPSE
+   Diurnal drop fell from 12.9°C → 9.1°C
+   ```
+   * **Formatting:**
+     * Line 1 (`▼ −29.7%`): **22pt, Bold, Deep Orange (`#FF7A00`)**
+     * Line 2 (`OVERNIGHT COOLING...`): **9pt, Bold, Dark Gray, Uppercase**
+     * Line 3 (`Diurnal drop...`): **8pt, Regular, Muted Gray**
+     * Alignment: **Center**
+5. Change toolbar dropdown to **`Entire View`**.
+
+---
+
+#### Card 3: `KPI 3 - Construction Jump`
+1. Click **New Worksheet** → rename to **`KPI 3 - Construction Jump`**.
+2. Create Calculated Field `KPI 3 Value` → Formula: `"+6.36°C"` → **OK**.
+3. Drag **`KPI 3 Value`** onto **`Text`** on the Marks card.
+4. Click **`Text`** → click **`...`** → enter:
+   ```text
+   ▲ +6.36°C
+   NEW CONSTRUCTION UHI JUMP
+   240m Blocks: Green replaced by Concrete
+   ```
+   * **Formatting:**
+     * Line 1 (`▲ +6.36°C`): **22pt, Bold, Crimson Red (`#E50914`)**
+     * Line 2 (`NEW CONSTRUCTION...`): **9pt, Bold, Dark Gray, Uppercase**
+     * Line 3 (`240m Blocks...`): **8pt, Regular, Muted Gray**
+     * Alignment: **Center**
+5. Change toolbar dropdown to **`Entire View`**.
 
 ---
 
 ### Assemble Dashboard 2 (Person 2)
 1. Click **New Dashboard** → rename to **`Dashboard 2 - Nocturnal Heat Trap`**.
 2. Set Size to **Fixed Size → Generic Desktop (1600 × 900)**.
-3. Layout:
-   * **Top (12% height):** `KPI Nighttime Warming`
-   * **Left (55% width):** `Animated Ward Night UHI Map` (keep the **Year Pages Play control** visible right next to it!)
-   * **Right Top (45% width):** `25-Year Nighttime Heat Trap`
-   * **Right Bottom (45% width):** `Warming Wards Ranking`
-4. Click **`Animated Ward Night UHI Map`** → enable **Use as Filter** (funnel icon) so clicking any ward updates the 25-year trend line for that specific ward!
-5. Save as **`Part2_Nocturnal_UHI.twbx`** (*File → Save As → Tableau Packaged Workbook `.twbx`*).
+3. **Build the KPI Top Banner (Horizontal Container):**
+   * From the bottom-left **Objects** panel, drag a **`Horizontal`** container to the top ~12% of the dashboard canvas.
+   * Drag **`KPI 1 - Night Warming`**, **`KPI 2 - Cooling Collapse`**, and **`KPI 3 - Construction Jump`** inside this horizontal container, side-by-side.
+   * Right-click any card title/tab inside the container → select **Select Container: Horizontal** → click its blue dropdown arrow → select **`Distribute Contents Evenly`** *(all 3 cards automatically become perfectly equal in width!)*.
+   * *(Optional Polish)* Right-click each KPI title on the dashboard → **Hide Title**. In the **Layout** tab on the left, set background to subtle gray `#F4F5F7` (or dark `#202124`) with `4px` padding and a clean thin border.
+4. **Arrange the Remaining Charts:**
+   * **Left (55% width):** Drag `Animated Ward Night UHI Map` (keep the **Year Pages Play control** visible right next to it!).
+   * **Right Top (45% width):** Drag `25-Year Nighttime Heat Trap`.
+   * **Right Bottom (45% width):** Drag `Warming Wards Ranking`.
+5. Click **`Animated Ward Night UHI Map`** → enable **Use as Filter** (funnel icon) so clicking any ward updates the 25-year trend line for that specific ward!
+6. Save as **`Part2_Nocturnal_UHI.twbx`** (*File → Save As → Tableau Packaged Workbook `.twbx`*).
 
 ---
 
