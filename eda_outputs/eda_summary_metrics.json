@@ -1,0 +1,1185 @@
+{
+  "dataset_overview": {
+    "master_rows": 6075,
+    "master_cols": 12,
+    "wards_count": 243,
+    "year_range": [
+      2001,
+      2025
+    ],
+    "grid_rows": 21374,
+    "grid_cols": 17,
+    "hotspots_rows": 21861,
+    "bbmp_wards_count": 243,
+    "total_bbmp_area_sqkm": 704.0905858748235,
+    "lakes_count": 1981,
+    "named_lakes_count": 285,
+    "total_lake_area_ha": 5137.93097528993
+  },
+  "master_numerical_summary": {
+    "count": {
+      "Day_LST_C": 6075.0,
+      "Night_LST_C": 6075.0,
+      "Cooling_Drop_C": 6075.0,
+      "Mean_NDVI": 6075.0,
+      "Mean_EVI": 6075.0,
+      "Mean_NDBI": 6075.0,
+      "Day_UHI_Anomaly_C": 6075.0,
+      "Night_UHI_Anomaly_C": 6075.0
+    },
+    "mean": {
+      "Day_LST_C": 35.60573004115226,
+      "Night_LST_C": 24.41611358024691,
+      "Cooling_Drop_C": 11.189616460905352,
+      "Mean_NDVI": 0.3044461069958848,
+      "Mean_EVI": 0.19319741563786005,
+      "Mean_NDBI": -0.12425550617283951,
+      "Day_UHI_Anomaly_C": -0.00026995884773662503,
+      "Night_UHI_Anomaly_C": 0.00011358024691358075
+    },
+    "std": {
+      "Day_LST_C": 1.524961716877929,
+      "Night_LST_C": 1.2610356154562274,
+      "Cooling_Drop_C": 1.8619322145757597,
+      "Mean_NDVI": 0.05620531309573327,
+      "Mean_EVI": 0.03728667570709044,
+      "Mean_NDBI": 0.05658168170468728,
+      "Day_UHI_Anomaly_C": 0.8133852192296663,
+      "Night_UHI_Anomaly_C": 0.9310003985599611
+    },
+    "min": {
+      "Day_LST_C": 30.41,
+      "Night_LST_C": 19.51,
+      "Cooling_Drop_C": 5.49,
+      "Mean_NDVI": 0.1628,
+      "Mean_EVI": 0.1045,
+      "Mean_NDBI": -0.4076,
+      "Day_UHI_Anomaly_C": -3.67,
+      "Night_UHI_Anomaly_C": -3.5
+    },
+    "25%": {
+      "Day_LST_C": 34.72,
+      "Night_LST_C": 23.63,
+      "Cooling_Drop_C": 10.06,
+      "Mean_NDVI": 0.263,
+      "Mean_EVI": 0.1659,
+      "Mean_NDBI": -0.1627,
+      "Day_UHI_Anomaly_C": -0.57,
+      "Night_UHI_Anomaly_C": -0.6
+    },
+    "50%": {
+      "Day_LST_C": 35.73,
+      "Night_LST_C": 24.49,
+      "Cooling_Drop_C": 11.15,
+      "Mean_NDVI": 0.2977,
+      "Mean_EVI": 0.1881,
+      "Mean_NDBI": -0.1192,
+      "Day_UHI_Anomaly_C": -0.01,
+      "Night_UHI_Anomaly_C": 0.2
+    },
+    "75%": {
+      "Day_LST_C": 36.64,
+      "Night_LST_C": 25.23,
+      "Cooling_Drop_C": 12.39,
+      "Mean_NDVI": 0.342,
+      "Mean_EVI": 0.2181,
+      "Mean_NDBI": -0.0836,
+      "Day_UHI_Anomaly_C": 0.55,
+      "Night_UHI_Anomaly_C": 0.7
+    },
+    "max": {
+      "Day_LST_C": 40.24,
+      "Night_LST_C": 28.13,
+      "Cooling_Drop_C": 17.55,
+      "Mean_NDVI": 0.545,
+      "Mean_EVI": 0.3547,
+      "Mean_NDBI": 0.0451,
+      "Day_UHI_Anomaly_C": 2.99,
+      "Night_UHI_Anomaly_C": 1.8
+    },
+    "skew": {
+      "Day_LST_C": -0.40888239047265407,
+      "Night_LST_C": -0.18835827395021945,
+      "Cooling_Drop_C": -0.1893298364497784,
+      "Mean_NDVI": 0.4669640219456682,
+      "Mean_EVI": 0.48603944645352326,
+      "Mean_NDBI": -0.4215145440260117,
+      "Day_UHI_Anomaly_C": 0.07018461212181581,
+      "Night_UHI_Anomaly_C": -0.6939087292277887
+    },
+    "kurtosis": {
+      "Day_LST_C": 0.2296317893376938,
+      "Night_LST_C": 0.10538768231999684,
+      "Cooling_Drop_C": 0.49678568334797113,
+      "Mean_NDVI": -0.04368436131786568,
+      "Mean_EVI": -0.034368543055605105,
+      "Mean_NDBI": 0.1752282862928114,
+      "Day_UHI_Anomaly_C": 0.2387297194944833,
+      "Night_UHI_Anomaly_C": -0.14541103324165894
+    }
+  },
+  "temporal_trends": {
+    "Day_LST_C": {
+      "slope_per_year": -0.10545891104779995,
+      "slope_per_decade": -1.0545891104779994,
+      "r_squared": 0.34762289303470906,
+      "p_value": 0.001924249905918994,
+      "std_err": 0.030124131587240185
+    },
+    "Night_LST_C": {
+      "slope_per_year": 0.08074137385248499,
+      "slope_per_decade": 0.8074137385248499,
+      "r_squared": 0.4686545901653387,
+      "p_value": 0.00016024880685306137,
+      "std_err": 0.017926448010314008
+    },
+    "Cooling_Drop_C": {
+      "slope_per_year": -0.18620493827160495,
+      "slope_per_decade": -1.8620493827160494,
+      "r_squared": 0.7603815834498835,
+      "p_value": 1.3645785935386135e-08,
+      "std_err": 0.021795737997581045
+    },
+    "Mean_NDVI": {
+      "slope_per_year": 0.0002989803735359291,
+      "slope_per_decade": 0.002989803735359291,
+      "r_squared": 0.013400392309974416,
+      "p_value": 0.5816158407828633,
+      "std_err": 0.000534922018686837
+    },
+    "Mean_EVI": {
+      "slope_per_year": -0.00044301266223488434,
+      "slope_per_decade": -0.004430126622348844,
+      "r_squared": 0.07167548503294423,
+      "p_value": 0.19571614199242113,
+      "std_err": 0.00033244270764666464
+    },
+    "Mean_NDBI": {
+      "slope_per_year": -0.0016167432731877178,
+      "slope_per_decade": -0.01616743273187718,
+      "r_squared": 0.1879128612151533,
+      "p_value": 0.030404423913516526,
+      "std_err": 0.0007008098676966011
+    },
+    "Day_UHI_Anomaly_C": {
+      "slope_per_year": 0.00014108895220006322,
+      "slope_per_decade": 0.0014108895220006322,
+      "r_squared": 0.10846561415690512,
+      "p_value": 0.10791861857030684,
+      "std_err": 8.434359331867402e-05
+    },
+    "Night_UHI_Anomaly_C": {
+      "slope_per_year": -0.0001355492244381133,
+      "slope_per_decade": -0.001355492244381133,
+      "r_squared": 0.09158451152220609,
+      "p_value": 0.14144951474955228,
+      "std_err": 8.901524008271418e-05
+    }
+  },
+  "decadal_shift": {
+    "2001_2005_Mean": {
+      "Day_LST_C": 36.62,
+      "Night_LST_C": 23.72,
+      "Cooling_Drop_C": 12.9,
+      "Mean_NDVI": 0.308,
+      "Mean_EVI": 0.199,
+      "Mean_NDBI": -0.109,
+      "Day_UHI_Anomaly_C": -0.002,
+      "Night_UHI_Anomaly_C": 0.0
+    },
+    "2011_2015_Mean": {
+      "Day_LST_C": 35.778,
+      "Night_LST_C": 24.383,
+      "Cooling_Drop_C": 11.395,
+      "Mean_NDVI": 0.291,
+      "Mean_EVI": 0.186,
+      "Mean_NDBI": -0.123,
+      "Day_UHI_Anomaly_C": -0.0,
+      "Night_UHI_Anomaly_C": 0.001
+    },
+    "2021_2025_Mean": {
+      "Day_LST_C": 34.044,
+      "Night_LST_C": 24.972,
+      "Cooling_Drop_C": 9.072,
+      "Mean_NDVI": 0.317,
+      "Mean_EVI": 0.193,
+      "Mean_NDBI": -0.154,
+      "Day_UHI_Anomaly_C": -0.0,
+      "Night_UHI_Anomaly_C": -0.002
+    },
+    "Change_25yr": {
+      "Day_LST_C": -2.576,
+      "Night_LST_C": 1.252,
+      "Cooling_Drop_C": -3.828,
+      "Mean_NDVI": 0.009,
+      "Mean_EVI": -0.006,
+      "Mean_NDBI": -0.045,
+      "Day_UHI_Anomaly_C": 0.002,
+      "Night_UHI_Anomaly_C": -0.002
+    },
+    "Pct_Change": {
+      "Day_LST_C": -7.035,
+      "Night_LST_C": 5.276,
+      "Cooling_Drop_C": -29.674,
+      "Mean_NDVI": 3.074,
+      "Mean_EVI": -2.895,
+      "Mean_NDBI": -40.829,
+      "Day_UHI_Anomaly_C": 87.029,
+      "Night_UHI_Anomaly_C": -638.298
+    }
+  },
+  "top_hottest_wards": [
+    {
+      "KGISWardNo": 25,
+      "KGISWardName": "Rajeshwari Nagar",
+      "Day_LST_C": 37.5612,
+      "Night_LST_C": 24.6312,
+      "Mean_NDVI": 0.256984,
+      "Mean_NDBI": -0.060556
+    },
+    {
+      "KGISWardNo": 26,
+      "KGISWardName": "Hegganahalli",
+      "Day_LST_C": 37.4116,
+      "Night_LST_C": 24.551599999999997,
+      "Mean_NDVI": 0.259628,
+      "Mean_NDBI": -0.051192
+    },
+    {
+      "KGISWardNo": 23,
+      "KGISWardName": "Nelagadderanahalli",
+      "Day_LST_C": 37.1708,
+      "Night_LST_C": 24.207200000000004,
+      "Mean_NDVI": 0.31064800000000004,
+      "Mean_NDBI": -0.095076
+    },
+    {
+      "KGISWardNo": 44,
+      "KGISWardName": "Veera Sindhura Lakshamana",
+      "Day_LST_C": 37.1568,
+      "Night_LST_C": 24.8004,
+      "Mean_NDVI": 0.271144,
+      "Mean_NDBI": -0.067256
+    },
+    {
+      "KGISWardNo": 43,
+      "KGISWardName": "Ranadheera Kanteerava",
+      "Day_LST_C": 37.141999999999996,
+      "Night_LST_C": 24.926,
+      "Mean_NDVI": 0.24211200000000002,
+      "Mean_NDBI": -0.059308
+    },
+    {
+      "KGISWardNo": 24,
+      "KGISWardName": "Rajagopal Nagar",
+      "Day_LST_C": 37.1144,
+      "Night_LST_C": 24.4512,
+      "Mean_NDVI": 0.28984000000000004,
+      "Mean_NDBI": -0.086848
+    },
+    {
+      "KGISWardNo": 27,
+      "KGISWardName": "Sunkadakatte",
+      "Day_LST_C": 37.0716,
+      "Night_LST_C": 24.321199999999997,
+      "Mean_NDVI": 0.24884799999999999,
+      "Mean_NDBI": -0.038484
+    },
+    {
+      "KGISWardNo": 42,
+      "KGISWardName": "Lakshmi Devi Nagar",
+      "Day_LST_C": 37.0708,
+      "Night_LST_C": 24.8032,
+      "Mean_NDVI": 0.26029199999999997,
+      "Mean_NDBI": -0.071644
+    },
+    {
+      "KGISWardNo": 41,
+      "KGISWardName": "Peenya",
+      "Day_LST_C": 36.9112,
+      "Night_LST_C": 24.503200000000003,
+      "Mean_NDVI": 0.314224,
+      "Mean_NDBI": -0.104284
+    },
+    {
+      "KGISWardNo": 58,
+      "KGISWardName": "Vrisabhavathi Nagar",
+      "Day_LST_C": 36.8688,
+      "Night_LST_C": 25.166,
+      "Mean_NDVI": 0.23764,
+      "Mean_NDBI": -0.057664
+    }
+  ],
+  "top_coolest_wards": [
+    {
+      "KGISWardNo": 115,
+      "KGISWardName": "Bellanduru",
+      "Day_LST_C": 33.2028,
+      "Night_LST_C": 22.172399999999996,
+      "Mean_NDVI": 0.43215200000000004,
+      "Mean_NDBI": -0.29499600000000004
+    },
+    {
+      "KGISWardNo": 180,
+      "KGISWardName": "Agaram",
+      "Day_LST_C": 34.0352,
+      "Night_LST_C": 23.248800000000003,
+      "Mean_NDVI": 0.43229599999999996,
+      "Mean_NDBI": -0.25107599999999997
+    },
+    {
+      "KGISWardNo": 111,
+      "KGISWardName": "Hagadur",
+      "Day_LST_C": 34.2164,
+      "Night_LST_C": 21.9316,
+      "Mean_NDVI": 0.43736400000000003,
+      "Mean_NDBI": -0.250488
+    },
+    {
+      "KGISWardNo": 179,
+      "KGISWardName": "Jogupalya",
+      "Day_LST_C": 34.3688,
+      "Night_LST_C": 24.6544,
+      "Mean_NDVI": 0.303012,
+      "Mean_NDBI": -0.142448
+    },
+    {
+      "KGISWardNo": 131,
+      "KGISWardName": "Ulsoor",
+      "Day_LST_C": 34.3776,
+      "Night_LST_C": 24.6552,
+      "Mean_NDVI": 0.32860799999999996,
+      "Mean_NDBI": -0.183368
+    },
+    {
+      "KGISWardNo": 229,
+      "KGISWardName": "Ibluru",
+      "Day_LST_C": 34.3792,
+      "Night_LST_C": 22.8612,
+      "Mean_NDVI": 0.351804,
+      "Mean_NDBI": -0.156692
+    },
+    {
+      "KGISWardNo": 114,
+      "KGISWardName": "Marathahalli",
+      "Day_LST_C": 34.3896,
+      "Night_LST_C": 22.452800000000003,
+      "Mean_NDVI": 0.295368,
+      "Mean_NDBI": -0.126784
+    },
+    {
+      "KGISWardNo": 178,
+      "KGISWardName": "Domlur",
+      "Day_LST_C": 34.3924,
+      "Night_LST_C": 24.3268,
+      "Mean_NDVI": 0.361072,
+      "Mean_NDBI": -0.19046
+    },
+    {
+      "KGISWardNo": 120,
+      "KGISWardName": "Hoysala Nagar",
+      "Day_LST_C": 34.4276,
+      "Night_LST_C": 24.496799999999997,
+      "Mean_NDVI": 0.349976,
+      "Mean_NDBI": -0.18809599999999999
+    },
+    {
+      "KGISWardNo": 124,
+      "KGISWardName": "Jeevanbhima Nagar",
+      "Day_LST_C": 34.5012,
+      "Night_LST_C": 23.701999999999998,
+      "Mean_NDVI": 0.368788,
+      "Mean_NDBI": -0.19581199999999999
+    }
+  ],
+  "top_warming_wards": [
+    {
+      "KGISWardNo": 114,
+      "KGISWardName": "Marathahalli",
+      "Delta_Day_LST_C": -0.9399999999999977,
+      "Delta_Night_LST_C": 1.8780000000000001,
+      "Delta_Mean_NDVI": -0.13276,
+      "Delta_Mean_NDBI": 0.09613999999999999
+    },
+    {
+      "KGISWardNo": 112,
+      "KGISWardName": "Varthuru",
+      "Delta_Day_LST_C": -1.033999999999999,
+      "Delta_Night_LST_C": 1.0459999999999958,
+      "Delta_Mean_NDVI": -0.04383999999999999,
+      "Delta_Mean_NDBI": 0.031720000000000026
+    },
+    {
+      "KGISWardNo": 115,
+      "KGISWardName": "Bellanduru",
+      "Delta_Day_LST_C": -1.1640000000000086,
+      "Delta_Night_LST_C": 1.2940000000000005,
+      "Delta_Mean_NDVI": -0.06680000000000014,
+      "Delta_Mean_NDBI": 0.09777999999999998
+    },
+    {
+      "KGISWardNo": 113,
+      "KGISWardName": "Munnekollala",
+      "Delta_Day_LST_C": -1.5079999999999956,
+      "Delta_Night_LST_C": 1.5700000000000038,
+      "Delta_Mean_NDVI": -0.09406000000000003,
+      "Delta_Mean_NDBI": 0.06157999999999997
+    },
+    {
+      "KGISWardNo": 111,
+      "KGISWardName": "Hagadur",
+      "Delta_Day_LST_C": -1.5619999999999976,
+      "Delta_Night_LST_C": 1.0059999999999967,
+      "Delta_Mean_NDVI": -0.05059999999999992,
+      "Delta_Mean_NDBI": 0.023699999999999943
+    },
+    {
+      "KGISWardNo": 175,
+      "KGISWardName": "Ashoka Pillar",
+      "Delta_Day_LST_C": -1.8519999999999968,
+      "Delta_Night_LST_C": 0.8480000000000025,
+      "Delta_Mean_NDVI": 0.01913999999999999,
+      "Delta_Mean_NDBI": -0.04139999999999999
+    },
+    {
+      "KGISWardNo": 174,
+      "KGISWardName": "Vishveshwara Puram",
+      "Delta_Day_LST_C": -1.8840000000000003,
+      "Delta_Night_LST_C": 0.7699999999999996,
+      "Delta_Mean_NDVI": 0.02044000000000007,
+      "Delta_Mean_NDBI": -0.028939999999999994
+    },
+    {
+      "KGISWardNo": 65,
+      "KGISWardName": "Rajamahal Guttahalli",
+      "Delta_Day_LST_C": -1.8879999999999981,
+      "Delta_Night_LST_C": 0.7020000000000017,
+      "Delta_Mean_NDVI": 0.020399999999999974,
+      "Delta_Mean_NDBI": -0.060240000000000016
+    },
+    {
+      "KGISWardNo": 132,
+      "KGISWardName": "Dattatreya Temple",
+      "Delta_Day_LST_C": -1.8939999999999984,
+      "Delta_Night_LST_C": 0.6579999999999977,
+      "Delta_Mean_NDVI": 0.005439999999999945,
+      "Delta_Mean_NDBI": -0.03279999999999998
+    },
+    {
+      "KGISWardNo": 172,
+      "KGISWardName": "Dharmaraya Swamy Temple Ward",
+      "Delta_Day_LST_C": -1.8940000000000055,
+      "Delta_Night_LST_C": 0.6560000000000024,
+      "Delta_Mean_NDVI": 0.04281999999999997,
+      "Delta_Mean_NDBI": -0.044219999999999995
+    }
+  ],
+  "top_veg_loss_wards": [
+    {
+      "KGISWardNo": 114,
+      "KGISWardName": "Marathahalli",
+      "Delta_Mean_NDVI": -0.13276,
+      "Delta_Day_LST_C": -0.9399999999999977,
+      "Delta_Mean_NDBI": 0.09613999999999999
+    },
+    {
+      "KGISWardNo": 83,
+      "KGISWardName": "Kalkere",
+      "Delta_Mean_NDVI": -0.09936000000000006,
+      "Delta_Day_LST_C": -1.9180000000000064,
+      "Delta_Mean_NDBI": 0.06204000000000001
+    },
+    {
+      "KGISWardNo": 113,
+      "KGISWardName": "Munnekollala",
+      "Delta_Mean_NDVI": -0.09406000000000003,
+      "Delta_Day_LST_C": -1.5079999999999956,
+      "Delta_Mean_NDBI": 0.06157999999999997
+    },
+    {
+      "KGISWardNo": 115,
+      "KGISWardName": "Bellanduru",
+      "Delta_Mean_NDVI": -0.06680000000000014,
+      "Delta_Day_LST_C": -1.1640000000000086,
+      "Delta_Mean_NDBI": 0.09777999999999998
+    },
+    {
+      "KGISWardNo": 241,
+      "KGISWardName": "Puttenahalli - Sarakki Lake",
+      "Delta_Mean_NDVI": -0.061860000000000026,
+      "Delta_Day_LST_C": -2.745999999999995,
+      "Delta_Mean_NDBI": 0.015480000000000008
+    },
+    {
+      "KGISWardNo": 123,
+      "KGISWardName": "Jalakanteshwara Nagara",
+      "Delta_Mean_NDVI": -0.05734,
+      "Delta_Day_LST_C": -2.318000000000005,
+      "Delta_Mean_NDBI": 0.011699999999999988
+    },
+    {
+      "KGISWardNo": 209,
+      "KGISWardName": "Hosakerehalli",
+      "Delta_Mean_NDVI": -0.05624000000000001,
+      "Delta_Day_LST_C": -2.3640000000000043,
+      "Delta_Mean_NDBI": 0.014899999999999997
+    },
+    {
+      "KGISWardNo": 111,
+      "KGISWardName": "Hagadur",
+      "Delta_Mean_NDVI": -0.05059999999999992,
+      "Delta_Day_LST_C": -1.5619999999999976,
+      "Delta_Mean_NDBI": 0.023699999999999943
+    },
+    {
+      "KGISWardNo": 234,
+      "KGISWardName": "Hongasandra",
+      "Delta_Mean_NDVI": -0.0489,
+      "Delta_Day_LST_C": -2.6780000000000044,
+      "Delta_Mean_NDBI": 0.027779999999999992
+    },
+    {
+      "KGISWardNo": 236,
+      "KGISWardName": "Devarachikkanahalli",
+      "Delta_Mean_NDVI": -0.04719999999999999,
+      "Delta_Day_LST_C": -3.102000000000004,
+      "Delta_Mean_NDBI": 0.0005799999999999972
+    }
+  ],
+  "top_built_gain_wards": [
+    {
+      "KGISWardNo": 115,
+      "KGISWardName": "Bellanduru",
+      "Delta_Mean_NDBI": 0.09777999999999998,
+      "Delta_Mean_NDVI": -0.06680000000000014,
+      "Delta_Day_LST_C": -1.1640000000000086
+    },
+    {
+      "KGISWardNo": 114,
+      "KGISWardName": "Marathahalli",
+      "Delta_Mean_NDBI": 0.09613999999999999,
+      "Delta_Mean_NDVI": -0.13276,
+      "Delta_Day_LST_C": -0.9399999999999977
+    },
+    {
+      "KGISWardNo": 83,
+      "KGISWardName": "Kalkere",
+      "Delta_Mean_NDBI": 0.06204000000000001,
+      "Delta_Mean_NDVI": -0.09936000000000006,
+      "Delta_Day_LST_C": -1.9180000000000064
+    },
+    {
+      "KGISWardNo": 113,
+      "KGISWardName": "Munnekollala",
+      "Delta_Mean_NDBI": 0.06157999999999997,
+      "Delta_Mean_NDVI": -0.09406000000000003,
+      "Delta_Day_LST_C": -1.5079999999999956
+    },
+    {
+      "KGISWardNo": 112,
+      "KGISWardName": "Varthuru",
+      "Delta_Mean_NDBI": 0.031720000000000026,
+      "Delta_Mean_NDVI": -0.04383999999999999,
+      "Delta_Day_LST_C": -1.033999999999999
+    },
+    {
+      "KGISWardNo": 234,
+      "KGISWardName": "Hongasandra",
+      "Delta_Mean_NDBI": 0.027779999999999992,
+      "Delta_Mean_NDVI": -0.0489,
+      "Delta_Day_LST_C": -2.6780000000000044
+    },
+    {
+      "KGISWardNo": 111,
+      "KGISWardName": "Hagadur",
+      "Delta_Mean_NDBI": 0.023699999999999943,
+      "Delta_Mean_NDVI": -0.05059999999999992,
+      "Delta_Day_LST_C": -1.5619999999999976
+    },
+    {
+      "KGISWardNo": 24,
+      "KGISWardName": "Rajagopal Nagar",
+      "Delta_Mean_NDBI": 0.02063999999999999,
+      "Delta_Mean_NDVI": -0.004599999999999993,
+      "Delta_Day_LST_C": -2.0060000000000002
+    },
+    {
+      "KGISWardNo": 68,
+      "KGISWardName": "Vishwanath Nagenahalli",
+      "Delta_Mean_NDBI": 0.018439999999999998,
+      "Delta_Mean_NDVI": -0.023820000000000008,
+      "Delta_Day_LST_C": -2.1439999999999984
+    },
+    {
+      "KGISWardNo": 163,
+      "KGISWardName": "Veerabhadranagar",
+      "Delta_Mean_NDBI": 0.01590000000000001,
+      "Delta_Mean_NDVI": -0.023180000000000034,
+      "Delta_Day_LST_C": -2.7420000000000044
+    }
+  ],
+  "min_cooling_drop_wards": [
+    {
+      "KGISWardNo": 200,
+      "KGISWardName": "Yediyur",
+      "Cooling_Drop_C": 9.706,
+      "Day_LST_C": 34.954,
+      "Night_LST_C": 25.248,
+      "Mean_NDBI": -0.14034000000000002
+    },
+    {
+      "KGISWardNo": 179,
+      "KGISWardName": "Jogupalya",
+      "Cooling_Drop_C": 9.7136,
+      "Day_LST_C": 34.3688,
+      "Night_LST_C": 24.6544,
+      "Mean_NDBI": -0.142448
+    },
+    {
+      "KGISWardNo": 131,
+      "KGISWardName": "Ulsoor",
+      "Cooling_Drop_C": 9.7224,
+      "Day_LST_C": 34.3776,
+      "Night_LST_C": 24.6552,
+      "Mean_NDBI": -0.183368
+    },
+    {
+      "KGISWardNo": 196,
+      "KGISWardName": "Byrasandra",
+      "Cooling_Drop_C": 9.746,
+      "Day_LST_C": 34.8112,
+      "Night_LST_C": 25.066399999999998,
+      "Mean_NDBI": -0.172808
+    },
+    {
+      "KGISWardNo": 175,
+      "KGISWardName": "Ashoka Pillar",
+      "Cooling_Drop_C": 9.7476,
+      "Day_LST_C": 34.82,
+      "Night_LST_C": 25.0724,
+      "Mean_NDBI": -0.186368
+    },
+    {
+      "KGISWardNo": 65,
+      "KGISWardName": "Rajamahal Guttahalli",
+      "Cooling_Drop_C": 9.8088,
+      "Day_LST_C": 34.6576,
+      "Night_LST_C": 24.8488,
+      "Mean_NDBI": -0.151752
+    },
+    {
+      "KGISWardNo": 210,
+      "KGISWardName": "Basavanagudi",
+      "Cooling_Drop_C": 9.816,
+      "Day_LST_C": 35.211999999999996,
+      "Night_LST_C": 25.397599999999997,
+      "Mean_NDBI": -0.117188
+    },
+    {
+      "KGISWardNo": 73,
+      "KGISWardName": "Jayachamarajendra  Nagar",
+      "Cooling_Drop_C": 9.8396,
+      "Day_LST_C": 34.6044,
+      "Night_LST_C": 24.764400000000002,
+      "Mean_NDBI": -0.170596
+    },
+    {
+      "KGISWardNo": 64,
+      "KGISWardName": "Kadu Malleshwara",
+      "Cooling_Drop_C": 9.8704,
+      "Day_LST_C": 34.9908,
+      "Night_LST_C": 25.121599999999997,
+      "Mean_NDBI": -0.15204800000000002
+    },
+    {
+      "KGISWardNo": 132,
+      "KGISWardName": "Dattatreya Temple",
+      "Cooling_Drop_C": 9.8728,
+      "Day_LST_C": 34.931599999999996,
+      "Night_LST_C": 25.0568,
+      "Mean_NDBI": -0.108704
+    }
+  ],
+  "pearson_correlations": {
+    "Day_LST_C": {
+      "Day_LST_C": 1.0,
+      "Night_LST_C": 0.117,
+      "Cooling_Drop_C": 0.74,
+      "Mean_NDVI": -0.387,
+      "Mean_EVI": -0.342,
+      "Mean_NDBI": 0.636,
+      "Day_UHI_Anomaly_C": 0.533,
+      "Night_UHI_Anomaly_C": 0.152
+    },
+    "Night_LST_C": {
+      "Day_LST_C": 0.117,
+      "Night_LST_C": 1.0,
+      "Cooling_Drop_C": -0.582,
+      "Mean_NDVI": -0.486,
+      "Mean_EVI": -0.576,
+      "Mean_NDBI": 0.276,
+      "Day_UHI_Anomaly_C": 0.212,
+      "Night_UHI_Anomaly_C": 0.737
+    },
+    "Cooling_Drop_C": {
+      "Day_LST_C": 0.74,
+      "Night_LST_C": -0.582,
+      "Cooling_Drop_C": 1.0,
+      "Mean_NDVI": 0.012,
+      "Mean_EVI": 0.11,
+      "Mean_NDBI": 0.334,
+      "Day_UHI_Anomaly_C": 0.293,
+      "Night_UHI_Anomaly_C": -0.375
+    },
+    "Mean_NDVI": {
+      "Day_LST_C": -0.387,
+      "Night_LST_C": -0.486,
+      "Cooling_Drop_C": 0.012,
+      "Mean_NDVI": 1.0,
+      "Mean_EVI": 0.968,
+      "Mean_NDBI": -0.84,
+      "Day_UHI_Anomaly_C": -0.432,
+      "Night_UHI_Anomaly_C": -0.565
+    },
+    "Mean_EVI": {
+      "Day_LST_C": -0.342,
+      "Night_LST_C": -0.576,
+      "Cooling_Drop_C": 0.11,
+      "Mean_NDVI": 0.968,
+      "Mean_EVI": 1.0,
+      "Mean_NDBI": -0.815,
+      "Day_UHI_Anomaly_C": -0.465,
+      "Night_UHI_Anomaly_C": -0.597
+    },
+    "Mean_NDBI": {
+      "Day_LST_C": 0.636,
+      "Night_LST_C": 0.276,
+      "Cooling_Drop_C": 0.334,
+      "Mean_NDVI": -0.84,
+      "Mean_EVI": -0.815,
+      "Mean_NDBI": 1.0,
+      "Day_UHI_Anomaly_C": 0.596,
+      "Night_UHI_Anomaly_C": 0.405
+    },
+    "Day_UHI_Anomaly_C": {
+      "Day_LST_C": 0.533,
+      "Night_LST_C": 0.212,
+      "Cooling_Drop_C": 0.293,
+      "Mean_NDVI": -0.432,
+      "Mean_EVI": -0.465,
+      "Mean_NDBI": 0.596,
+      "Day_UHI_Anomaly_C": 1.0,
+      "Night_UHI_Anomaly_C": 0.286
+    },
+    "Night_UHI_Anomaly_C": {
+      "Day_LST_C": 0.152,
+      "Night_LST_C": 0.737,
+      "Cooling_Drop_C": -0.375,
+      "Mean_NDVI": -0.565,
+      "Mean_EVI": -0.597,
+      "Mean_NDBI": 0.405,
+      "Day_UHI_Anomaly_C": 0.286,
+      "Night_UHI_Anomaly_C": 1.0
+    }
+  },
+  "spearman_correlations": {
+    "Day_LST_C": {
+      "Day_LST_C": 1.0,
+      "Night_LST_C": 0.136,
+      "Cooling_Drop_C": 0.688,
+      "Mean_NDVI": -0.39,
+      "Mean_EVI": -0.352,
+      "Mean_NDBI": 0.64,
+      "Day_UHI_Anomaly_C": 0.537,
+      "Night_UHI_Anomaly_C": 0.161
+    },
+    "Night_LST_C": {
+      "Day_LST_C": 0.136,
+      "Night_LST_C": 1.0,
+      "Cooling_Drop_C": -0.572,
+      "Mean_NDVI": -0.475,
+      "Mean_EVI": -0.561,
+      "Mean_NDBI": 0.277,
+      "Day_UHI_Anomaly_C": 0.189,
+      "Night_UHI_Anomaly_C": 0.698
+    },
+    "Cooling_Drop_C": {
+      "Day_LST_C": 0.688,
+      "Night_LST_C": -0.572,
+      "Cooling_Drop_C": 1.0,
+      "Mean_NDVI": 0.021,
+      "Mean_EVI": 0.111,
+      "Mean_NDBI": 0.301,
+      "Day_UHI_Anomaly_C": 0.284,
+      "Night_UHI_Anomaly_C": -0.354
+    },
+    "Mean_NDVI": {
+      "Day_LST_C": -0.39,
+      "Night_LST_C": -0.475,
+      "Cooling_Drop_C": 0.021,
+      "Mean_NDVI": 1.0,
+      "Mean_EVI": 0.968,
+      "Mean_NDBI": -0.821,
+      "Day_UHI_Anomaly_C": -0.426,
+      "Night_UHI_Anomaly_C": -0.57
+    },
+    "Mean_EVI": {
+      "Day_LST_C": -0.352,
+      "Night_LST_C": -0.561,
+      "Cooling_Drop_C": 0.111,
+      "Mean_NDVI": 0.968,
+      "Mean_EVI": 1.0,
+      "Mean_NDBI": -0.801,
+      "Day_UHI_Anomaly_C": -0.461,
+      "Night_UHI_Anomaly_C": -0.595
+    },
+    "Mean_NDBI": {
+      "Day_LST_C": 0.64,
+      "Night_LST_C": 0.277,
+      "Cooling_Drop_C": 0.301,
+      "Mean_NDVI": -0.821,
+      "Mean_EVI": -0.801,
+      "Mean_NDBI": 1.0,
+      "Day_UHI_Anomaly_C": 0.587,
+      "Night_UHI_Anomaly_C": 0.406
+    },
+    "Day_UHI_Anomaly_C": {
+      "Day_LST_C": 0.537,
+      "Night_LST_C": 0.189,
+      "Cooling_Drop_C": 0.284,
+      "Mean_NDVI": -0.426,
+      "Mean_EVI": -0.461,
+      "Mean_NDBI": 0.587,
+      "Day_UHI_Anomaly_C": 1.0,
+      "Night_UHI_Anomaly_C": 0.284
+    },
+    "Night_UHI_Anomaly_C": {
+      "Day_LST_C": 0.161,
+      "Night_LST_C": 0.698,
+      "Cooling_Drop_C": -0.354,
+      "Mean_NDVI": -0.57,
+      "Mean_EVI": -0.595,
+      "Mean_NDBI": 0.406,
+      "Day_UHI_Anomaly_C": 0.284,
+      "Night_UHI_Anomaly_C": 1.0
+    }
+  },
+  "grid_land_transitions": {
+    "Count": {
+      "Persistent Green / Park": 13736,
+      "Persistent Urban / Bare": 5546,
+      "Urban Densification": 1311,
+      "Greening / Recovery": 720,
+      "Newly Built-Up (Green -> Concrete)": 59,
+      "Waterbody": 2
+    },
+    "Percentage": {
+      "Persistent Green / Park": 64.26,
+      "Persistent Urban / Bare": 25.95,
+      "Urban Densification": 6.13,
+      "Greening / Recovery": 3.37,
+      "Newly Built-Up (Green -> Concrete)": 0.28,
+      "Waterbody": 0.01
+    }
+  },
+  "grid_transition_stats": {
+    "('Delta_LST_C', 'mean')": {
+      "Greening / Recovery": -3.8,
+      "Newly Built-Up (Green -> Concrete)": 2.92,
+      "Persistent Green / Park": -4.03,
+      "Persistent Urban / Bare": -3.18,
+      "Urban Densification": 1.72,
+      "Waterbody": -3.16
+    },
+    "('Delta_LST_C', 'std')": {
+      "Greening / Recovery": 3.27,
+      "Newly Built-Up (Green -> Concrete)": 4.02,
+      "Persistent Green / Park": 3.6,
+      "Persistent Urban / Bare": 3.08,
+      "Urban Densification": 3.52,
+      "Waterbody": 1.03
+    },
+    "('Delta_LST_C', 'median')": {
+      "Greening / Recovery": -3.6,
+      "Newly Built-Up (Green -> Concrete)": 3.92,
+      "Persistent Green / Park": -3.77,
+      "Persistent Urban / Bare": -2.85,
+      "Urban Densification": 1.94,
+      "Waterbody": -3.16
+    },
+    "('Delta_NDVI', 'mean')": {
+      "Greening / Recovery": 0.11,
+      "Newly Built-Up (Green -> Concrete)": -0.23,
+      "Persistent Green / Park": 0.1,
+      "Persistent Urban / Bare": 0.01,
+      "Urban Densification": -0.17,
+      "Waterbody": -0.32
+    },
+    "('Delta_NDVI', 'std')": {
+      "Greening / Recovery": 0.04,
+      "Newly Built-Up (Green -> Concrete)": 0.13,
+      "Persistent Green / Park": 0.09,
+      "Persistent Urban / Bare": 0.05,
+      "Urban Densification": 0.1,
+      "Waterbody": 0.43
+    },
+    "('Delta_NDVI', 'median')": {
+      "Greening / Recovery": 0.1,
+      "Newly Built-Up (Green -> Concrete)": -0.18,
+      "Persistent Green / Park": 0.1,
+      "Persistent Urban / Bare": 0.02,
+      "Urban Densification": -0.14,
+      "Waterbody": -0.32
+    },
+    "('Delta_NDBI', 'mean')": {
+      "Greening / Recovery": -0.08,
+      "Newly Built-Up (Green -> Concrete)": 0.15,
+      "Persistent Green / Park": -0.09,
+      "Persistent Urban / Bare": -0.05,
+      "Urban Densification": 0.15,
+      "Waterbody": 0.14
+    },
+    "('Delta_NDBI', 'std')": {
+      "Greening / Recovery": 0.07,
+      "Newly Built-Up (Green -> Concrete)": 0.13,
+      "Persistent Green / Park": 0.08,
+      "Persistent Urban / Bare": 0.05,
+      "Urban Densification": 0.1,
+      "Waterbody": 0.0
+    },
+    "('Delta_NDBI', 'median')": {
+      "Greening / Recovery": -0.08,
+      "Newly Built-Up (Green -> Concrete)": 0.09,
+      "Persistent Green / Park": -0.09,
+      "Persistent Urban / Bare": -0.05,
+      "Urban Densification": 0.11,
+      "Waterbody": 0.14
+    },
+    "('LST_2002_C', 'mean')": {
+      "Greening / Recovery": 44.0,
+      "Newly Built-Up (Green -> Concrete)": 38.43,
+      "Persistent Green / Park": 42.88,
+      "Persistent Urban / Bare": 43.36,
+      "Urban Densification": 37.77,
+      "Waterbody": 33.32
+    },
+    "('LST_2002_C', 'std')": {
+      "Greening / Recovery": 3.98,
+      "Newly Built-Up (Green -> Concrete)": 3.71,
+      "Persistent Green / Park": 3.49,
+      "Persistent Urban / Bare": 2.7,
+      "Urban Densification": 3.63,
+      "Waterbody": 0.31
+    },
+    "('LST_2002_C', 'median')": {
+      "Greening / Recovery": 44.24,
+      "Newly Built-Up (Green -> Concrete)": 39.54,
+      "Persistent Green / Park": 42.98,
+      "Persistent Urban / Bare": 43.28,
+      "Urban Densification": 38.0,
+      "Waterbody": 33.32
+    },
+    "('LST_2025_C', 'mean')": {
+      "Greening / Recovery": 40.2,
+      "Newly Built-Up (Green -> Concrete)": 41.35,
+      "Persistent Green / Park": 38.85,
+      "Persistent Urban / Bare": 40.18,
+      "Urban Densification": 39.49,
+      "Waterbody": 30.16
+    },
+    "('LST_2025_C', 'std')": {
+      "Greening / Recovery": 2.87,
+      "Newly Built-Up (Green -> Concrete)": 4.71,
+      "Persistent Green / Park": 2.63,
+      "Persistent Urban / Bare": 2.19,
+      "Urban Densification": 2.96,
+      "Waterbody": 1.34
+    },
+    "('LST_2025_C', 'median')": {
+      "Greening / Recovery": 40.25,
+      "Newly Built-Up (Green -> Concrete)": 40.83,
+      "Persistent Green / Park": 38.79,
+      "Persistent Urban / Bare": 40.17,
+      "Urban Densification": 39.54,
+      "Waterbody": 30.16
+    }
+  },
+  "hotspots_zonal_means": {
+    "LST_2002_C": {
+      "Bellandur_ORR_Ecospace": 36.57,
+      "Cubbon_Park_Benchmark": 37.88,
+      "Electronic_City_Ph1": 44.11,
+      "Manyata_Tech_Park": 45.78,
+      "Whitefield_ITPL": 42.94
+    },
+    "LST_2015_C": {
+      "Bellandur_ORR_Ecospace": 38.35,
+      "Cubbon_Park_Benchmark": 37.54,
+      "Electronic_City_Ph1": 39.16,
+      "Manyata_Tech_Park": 38.77,
+      "Whitefield_ITPL": 37.31
+    },
+    "LST_2025_C": {
+      "Bellandur_ORR_Ecospace": 36.31,
+      "Cubbon_Park_Benchmark": 37.07,
+      "Electronic_City_Ph1": 37.01,
+      "Manyata_Tech_Park": 40.61,
+      "Whitefield_ITPL": 38.07
+    },
+    "Delta_LST_C": {
+      "Bellandur_ORR_Ecospace": -0.26,
+      "Cubbon_Park_Benchmark": -0.81,
+      "Electronic_City_Ph1": -7.09,
+      "Manyata_Tech_Park": -5.17,
+      "Whitefield_ITPL": -4.87
+    },
+    "NDVI_2002": {
+      "Bellandur_ORR_Ecospace": 0.43,
+      "Cubbon_Park_Benchmark": 0.39,
+      "Electronic_City_Ph1": 0.27,
+      "Manyata_Tech_Park": 0.27,
+      "Whitefield_ITPL": 0.29
+    },
+    "NDVI_2025": {
+      "Bellandur_ORR_Ecospace": 0.33,
+      "Cubbon_Park_Benchmark": 0.48,
+      "Electronic_City_Ph1": 0.35,
+      "Manyata_Tech_Park": 0.27,
+      "Whitefield_ITPL": 0.35
+    },
+    "Delta_NDVI": {
+      "Bellandur_ORR_Ecospace": -0.11,
+      "Cubbon_Park_Benchmark": 0.09,
+      "Electronic_City_Ph1": 0.08,
+      "Manyata_Tech_Park": -0.0,
+      "Whitefield_ITPL": 0.05
+    },
+    "NDBI_2002": {
+      "Bellandur_ORR_Ecospace": -0.1,
+      "Cubbon_Park_Benchmark": -0.07,
+      "Electronic_City_Ph1": 0.08,
+      "Manyata_Tech_Park": 0.06,
+      "Whitefield_ITPL": 0.04
+    },
+    "NDBI_2025": {
+      "Bellandur_ORR_Ecospace": -0.05,
+      "Cubbon_Park_Benchmark": -0.15,
+      "Electronic_City_Ph1": -0.03,
+      "Manyata_Tech_Park": 0.01,
+      "Whitefield_ITPL": -0.03
+    },
+    "Delta_NDBI": {
+      "Bellandur_ORR_Ecospace": 0.05,
+      "Cubbon_Park_Benchmark": -0.07,
+      "Electronic_City_Ph1": -0.11,
+      "Manyata_Tech_Park": -0.05,
+      "Whitefield_ITPL": -0.07
+    }
+  },
+  "thermal_penalties": {
+    "Mean_LST_2025_C": {
+      "Bellandur_ORR_Ecospace": 36.31,
+      "Cubbon_Park_Benchmark": 37.07,
+      "Electronic_City_Ph1": 37.01,
+      "Manyata_Tech_Park": 40.61,
+      "Whitefield_ITPL": 38.07
+    },
+    "Delta_LST_C": {
+      "Bellandur_ORR_Ecospace": -0.26,
+      "Cubbon_Park_Benchmark": -0.81,
+      "Electronic_City_Ph1": -7.09,
+      "Manyata_Tech_Park": -5.17,
+      "Whitefield_ITPL": -4.87
+    },
+    "Thermal_Penalty_vs_Cubbon_2025": {
+      "Bellandur_ORR_Ecospace": -0.76,
+      "Cubbon_Park_Benchmark": 0.0,
+      "Electronic_City_Ph1": -0.06,
+      "Manyata_Tech_Park": 3.54,
+      "Whitefield_ITPL": 1.0
+    },
+    "Excess_Warming_vs_Cubbon": {
+      "Bellandur_ORR_Ecospace": 0.55,
+      "Cubbon_Park_Benchmark": 0.0,
+      "Electronic_City_Ph1": -6.28,
+      "Manyata_Tech_Park": -4.36,
+      "Whitefield_ITPL": -4.06
+    },
+    "Delta_NDVI": {
+      "Bellandur_ORR_Ecospace": -0.11,
+      "Cubbon_Park_Benchmark": 0.09,
+      "Electronic_City_Ph1": 0.08,
+      "Manyata_Tech_Park": -0.0,
+      "Whitefield_ITPL": 0.05
+    },
+    "Delta_NDBI": {
+      "Bellandur_ORR_Ecospace": 0.05,
+      "Cubbon_Park_Benchmark": -0.07,
+      "Electronic_City_Ph1": -0.11,
+      "Manyata_Tech_Park": -0.05,
+      "Whitefield_ITPL": -0.07
+    }
+  },
+  "geotiff_stats": {
+    "Bengaluru_30m_2002.tif": {
+      "width": 1202,
+      "height": 1145,
+      "bands": 3,
+      "valid_pct": 99.2950613606144,
+      "b1_name": "LST_C",
+      "b1_mean": 42.729583740234375,
+      "b1_std": 3.961301803588867,
+      "b1_min": 24.29803466796875,
+      "b1_max": 59.243865966796875,
+      "b2_name": "NDVI",
+      "b2_mean": 0.29677659273147583,
+      "b3_name": "NDBI",
+      "b3_mean": 0.05968453735113144
+    },
+    "Bengaluru_30m_2015.tif": {
+      "width": 1202,
+      "height": 1145,
+      "bands": 3,
+      "valid_pct": 99.91644202893285,
+      "b1_name": "LST_C",
+      "b1_mean": 38.4317512512207,
+      "b1_std": 2.334028720855713,
+      "b1_min": 25.842987060546875,
+      "b1_max": 54.366363525390625,
+      "b2_name": "NDVI",
+      "b2_mean": 0.36366161704063416,
+      "b3_name": "NDBI",
+      "b3_mean": -0.013018873520195484
+    },
+    "Bengaluru_30m_2025.tif": {
+      "width": 1202,
+      "height": 1145,
+      "bands": 3,
+      "valid_pct": 99.7978623691228,
+      "b1_name": "LST_C",
+      "b1_mean": 39.292564392089844,
+      "b1_std": 2.7846453189849854,
+      "b1_min": 28.915771484375,
+      "b1_max": 53.2725830078125,
+      "b2_name": "NDVI",
+      "b2_mean": 0.3550940454006195,
+      "b3_name": "NDBI",
+      "b3_mean": -0.006201097276061773
+    },
+    "Bengaluru_30m_Change_2002_2025.tif": {
+      "width": 1202,
+      "height": 1145,
+      "bands": 3,
+      "valid_pct": 99.0929237297372,
+      "b1_name": "Delta_LST_C",
+      "b1_mean": -3.447509288787842,
+      "b1_std": 4.066129207611084,
+      "b1_min": -19.59893798828125,
+      "b1_max": 16.874755859375,
+      "b2_name": "Delta_NDVI",
+      "b2_mean": 0.05849972739815712,
+      "b3_name": "Delta_NDBI",
+      "b3_mean": -0.06635364890098572
+    }
+  }
+}
