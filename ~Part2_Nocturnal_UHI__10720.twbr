@@ -1,0 +1,1620 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0912.1023                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='7349419d72df5f58b8511b702896fd44704d7f86f6d2ea80bc6ad60ad8644836' _.fcp.WorkbookFingerprinting.true...creator-author-id='7349419d72df5f58b8511b702896fd44704d7f86f6d2ea80bc6ad60ad8644836' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='7349419d72df5f58b8511b702896fd44704d7f86f6d2ea80bc6ad60ad8644836' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='7349419d72df5f58b8511b702896fd44704d7f86f6d2ea80bc6ad60ad8644836' original-version='18.1' source-build='2026.2.3 (20262.26.0912.1023)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <RelationshipCalculations />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SpatialFileLayer />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='BBMP_Wards.geojson+ (Multiple Connections)' inline='true' name='federated.15cg6ld1mk24qw108r79a1hjem1g' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='BBMP_Wards' name='ogrdirect.1pzekyw1pngg1x1452st80vxmnuf'>
+            <connection class='ogrdirect' directory='D:/College/sem5/Data Viz/project/bengaluru-thermal-shift/datasets' filename='BBMP_Wards.geojson' password='' server='' tablename='' />
+          </named-connection>
+          <named-connection caption='Bengaluru_UHI_Master_2001_2025' name='textscan.1h4xvsh1d0ry0b15xj6q50re9od2'>
+            <connection class='textscan' directory='D:/College/sem5/Data Viz/project/bengaluru-thermal-shift/datasets' filename='Bengaluru_UHI_Master_2001_2025.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='ogrdirect.1pzekyw1pngg1x1452st80vxmnuf' name='BBMP_Wards.geojson' table='[BBMP_Wards.geojson]' type='table'>
+            <columns>
+              <column datatype='integer' name='KGISWardID' ordinal='0' />
+              <column datatype='string' name='KGISWardCode' ordinal='1' />
+              <column datatype='integer' name='LGD_WardCode' ordinal='2' />
+              <column datatype='string' name='KGISWardNo' ordinal='3' />
+              <column datatype='string' name='KGISWardName' ordinal='4' />
+              <column datatype='string' name='KGISTownCode' ordinal='5' />
+              <column datatype='spatial' name='Geometry' ordinal='6' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1h4xvsh1d0ry0b15xj6q50re9od2' name='Bengaluru_UHI_Master_2001_2025.csv' table='[Bengaluru_UHI_Master_2001_2025#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='KGISWardNo' ordinal='0' />
+              <column datatype='string' name='KGISWardName' ordinal='1' />
+              <column datatype='integer' name='KGISWardID' ordinal='2' />
+              <column datatype='integer' name='Year' ordinal='3' />
+              <column datatype='real' name='Day_LST_C' ordinal='4' />
+              <column datatype='real' name='Night_LST_C' ordinal='5' />
+              <column datatype='real' name='Cooling_Drop_C' ordinal='6' />
+              <column datatype='real' name='Mean_NDVI' ordinal='7' />
+              <column datatype='real' name='Mean_EVI' ordinal='8' />
+              <column datatype='real' name='Mean_NDBI' ordinal='9' />
+              <column datatype='real' name='Day_UHI_Anomaly_C' ordinal='10' />
+              <column datatype='real' name='Night_UHI_Anomaly_C' ordinal='11' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[Cooling_Drop_C]' value='[Bengaluru_UHI_Master_2001_2025.csv].[Cooling_Drop_C]' />
+          <map key='[Day_LST_C]' value='[Bengaluru_UHI_Master_2001_2025.csv].[Day_LST_C]' />
+          <map key='[Day_UHI_Anomaly_C]' value='[Bengaluru_UHI_Master_2001_2025.csv].[Day_UHI_Anomaly_C]' />
+          <map key='[Geometry]' value='[BBMP_Wards.geojson].[Geometry]' />
+          <map key='[KGISTownCode]' value='[BBMP_Wards.geojson].[KGISTownCode]' />
+          <map key='[KGISWardCode]' value='[BBMP_Wards.geojson].[KGISWardCode]' />
+          <map key='[KGISWardID (Bengaluru_UHI_Master_2001_2025.csv)]' value='[Bengaluru_UHI_Master_2001_2025.csv].[KGISWardID]' />
+          <map key='[KGISWardID]' value='[BBMP_Wards.geojson].[KGISWardID]' />
+          <map key='[KGISWardName (Bengaluru_UHI_Master_2001_2025.csv)]' value='[Bengaluru_UHI_Master_2001_2025.csv].[KGISWardName]' />
+          <map key='[KGISWardName]' value='[BBMP_Wards.geojson].[KGISWardName]' />
+          <map key='[KGISWardNo (Bengaluru_UHI_Master_2001_2025.csv)]' value='[Bengaluru_UHI_Master_2001_2025.csv].[KGISWardNo]' />
+          <map key='[KGISWardNo]' value='[BBMP_Wards.geojson].[KGISWardNo]' />
+          <map key='[LGD_WardCode]' value='[BBMP_Wards.geojson].[LGD_WardCode]' />
+          <map key='[Mean_EVI]' value='[Bengaluru_UHI_Master_2001_2025.csv].[Mean_EVI]' />
+          <map key='[Mean_NDBI]' value='[Bengaluru_UHI_Master_2001_2025.csv].[Mean_NDBI]' />
+          <map key='[Mean_NDVI]' value='[Bengaluru_UHI_Master_2001_2025.csv].[Mean_NDVI]' />
+          <map key='[Night_LST_C]' value='[Bengaluru_UHI_Master_2001_2025.csv].[Night_LST_C]' />
+          <map key='[Night_UHI_Anomaly_C]' value='[Bengaluru_UHI_Master_2001_2025.csv].[Night_UHI_Anomaly_C]' />
+          <map key='[Year]' value='[Bengaluru_UHI_Master_2001_2025.csv].[Year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Bengaluru_UHI_Master_2001_2025.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KGISWardID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[KGISWardID]</local-name>
+            <parent-name>[BBMP_Wards.geojson]</parent-name>
+            <remote-alias>KGISWardID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KGISWardCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[KGISWardCode]</local-name>
+            <parent-name>[BBMP_Wards.geojson]</parent-name>
+            <remote-alias>KGISWardCode</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LGD_WardCode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LGD_WardCode]</local-name>
+            <parent-name>[BBMP_Wards.geojson]</parent-name>
+            <remote-alias>LGD_WardCode</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KGISWardNo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[KGISWardNo]</local-name>
+            <parent-name>[BBMP_Wards.geojson]</parent-name>
+            <remote-alias>KGISWardNo</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KGISWardName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[KGISWardName]</local-name>
+            <parent-name>[BBMP_Wards.geojson]</parent-name>
+            <remote-alias>KGISWardName</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KGISTownCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[KGISTownCode]</local-name>
+            <parent-name>[BBMP_Wards.geojson]</parent-name>
+            <remote-alias>KGISTownCode</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[BBMP_Wards.geojson]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KGISWardNo</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[KGISWardNo (Bengaluru_UHI_Master_2001_2025.csv)]</local-name>
+            <parent-name>[Bengaluru_UHI_Master_2001_2025.csv]</parent-name>
+            <remote-alias>KGISWardNo</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KGISWardName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[KGISWardName (Bengaluru_UHI_Master_2001_2025.csv)]</local-name>
+            <parent-name>[Bengaluru_UHI_Master_2001_2025.csv]</parent-name>
+            <remote-alias>KGISWardName</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KGISWardID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[KGISWardID (Bengaluru_UHI_Master_2001_2025.csv)]</local-name>
+            <parent-name>[Bengaluru_UHI_Master_2001_2025.csv]</parent-name>
+            <remote-alias>KGISWardID</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Bengaluru_UHI_Master_2001_2025.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day_LST_C</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Day_LST_C]</local-name>
+            <parent-name>[Bengaluru_UHI_Master_2001_2025.csv]</parent-name>
+            <remote-alias>Day_LST_C</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Night_LST_C</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Night_LST_C]</local-name>
+            <parent-name>[Bengaluru_UHI_Master_2001_2025.csv]</parent-name>
+            <remote-alias>Night_LST_C</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cooling_Drop_C</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cooling_Drop_C]</local-name>
+            <parent-name>[Bengaluru_UHI_Master_2001_2025.csv]</parent-name>
+            <remote-alias>Cooling_Drop_C</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean_NDVI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mean_NDVI]</local-name>
+            <parent-name>[Bengaluru_UHI_Master_2001_2025.csv]</parent-name>
+            <remote-alias>Mean_NDVI</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean_EVI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mean_EVI]</local-name>
+            <parent-name>[Bengaluru_UHI_Master_2001_2025.csv]</parent-name>
+            <remote-alias>Mean_EVI</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mean_NDBI</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mean_NDBI]</local-name>
+            <parent-name>[Bengaluru_UHI_Master_2001_2025.csv]</parent-name>
+            <remote-alias>Mean_NDBI</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day_UHI_Anomaly_C</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Day_UHI_Anomaly_C]</local-name>
+            <parent-name>[Bengaluru_UHI_Master_2001_2025.csv]</parent-name>
+            <remote-alias>Day_UHI_Anomaly_C</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Night_UHI_Anomaly_C</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Night_UHI_Anomaly_C]</local-name>
+            <parent-name>[Bengaluru_UHI_Master_2001_2025.csv]</parent-name>
+            <remote-alias>Night_UHI_Anomaly_C</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='KPI Text' datatype='string' name='[Calculation_0736672928493576]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;+1.25°C Nighttime Rise | -29.7% Cooling Drop | +6.36°C New Construction Jump&quot;' />
+      </column>
+      <column caption='KPI 1 Value' datatype='string' name='[Calculation_0736672929054729]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;+1.25°C&quot;' />
+      </column>
+      <column caption='KPI 2 Value' datatype='string' name='[Calculation_0736672929726474]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;-29.7%&quot;' />
+      </column>
+      <column caption='KPI 3 Value' datatype='string' name='[Calculation_0736672930172939]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;+6.36°C&quot;' />
+      </column>
+      <column caption='Cooling Drop C' datatype='real' name='[Cooling_Drop_C]' role='measure' type='quantitative' />
+      <column caption='Day LST C' datatype='real' name='[Day_LST_C]' role='dimension' type='quantitative' />
+      <column caption='Day UHI Anomaly C' datatype='real' name='[Day_UHI_Anomaly_C]' role='dimension' type='quantitative' />
+      <column caption='KGIS Town Code' datatype='string' name='[KGISTownCode]' role='dimension' type='nominal' />
+      <column caption='KGIS Ward Code' datatype='string' name='[KGISWardCode]' role='dimension' type='nominal' />
+      <column caption='KGISWardID (Bengaluru UHI Master 2001 2025.csv)' datatype='integer' name='[KGISWardID (Bengaluru_UHI_Master_2001_2025.csv)]' role='dimension' type='ordinal' />
+      <column caption='KGIS Ward ID' datatype='integer' name='[KGISWardID]' role='dimension' type='ordinal' />
+      <column caption='KGISWardName (Bengaluru UHI Master 2001 2025.csv)' datatype='string' name='[KGISWardName (Bengaluru_UHI_Master_2001_2025.csv)]' role='dimension' type='nominal' />
+      <column caption='KGIS Ward Name' datatype='string' name='[KGISWardName]' role='dimension' type='nominal' />
+      <column caption='KGISWardNo (Bengaluru UHI Master 2001 2025.csv)' datatype='integer' name='[KGISWardNo (Bengaluru_UHI_Master_2001_2025.csv)]' role='measure' type='quantitative' />
+      <column caption='KGIS Ward No' datatype='string' name='[KGISWardNo]' role='dimension' type='nominal' />
+      <column caption='LGD WardCode' datatype='integer' name='[LGD_WardCode]' role='dimension' type='ordinal' />
+      <column caption='Mean EVI' datatype='real' name='[Mean_EVI]' role='measure' type='quantitative' />
+      <column caption='Mean NDBI' datatype='real' name='[Mean_NDBI]' role='measure' type='quantitative' />
+      <column caption='Mean NDVI' datatype='real' name='[Mean_NDVI]' role='measure' type='quantitative' />
+      <column caption='Night LST C' datatype='real' name='[Night_LST_C]' role='measure' type='quantitative' />
+      <column caption='Night UHI Anomaly C' datatype='real' name='[Night_UHI_Anomaly_C]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='BBMP_Wards.geojson' datatype='table' name='[__tableau_internal_object_id__].[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]' role='measure' type='quantitative' />
+      <column caption='Bengaluru_UHI_Master_2001_2025.csv' datatype='table' name='[__tableau_internal_object_id__].[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]' role='measure' type='quantitative' />
+      <column-instance column='[Cooling_Drop_C]' derivation='Avg' name='[avg:Cooling_Drop_C:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Night_LST_C]' derivation='Avg' name='[avg:Night_LST_C:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Cooling_Drop_C]' derivation='Sum' name='[sum:Cooling_Drop_C:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/ATHIRA~1/AppData/Local/Temp/TableauTemp/#TableauTemp_1dlgvt31eeg1g01dmsll9098f0f4.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/20/2026 06:04:38 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A' table='[Extract].[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]' type='table' />
+            <relation name='Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C' table='[Extract].[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]' type='table' />
+          </relation>
+          <cols>
+            <map key='[Cooling_Drop_C]' value='[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C].[Cooling_Drop_C]' />
+            <map key='[Day_LST_C]' value='[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C].[Day_LST_C]' />
+            <map key='[Day_UHI_Anomaly_C]' value='[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C].[Day_UHI_Anomaly_C]' />
+            <map key='[Geometry]' value='[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A].[Geometry]' />
+            <map key='[KGISTownCode]' value='[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A].[KGISTownCode]' />
+            <map key='[KGISWardCode]' value='[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A].[KGISWardCode]' />
+            <map key='[KGISWardID (Bengaluru_UHI_Master_2001_2025.csv)]' value='[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C].[KGISWardID]' />
+            <map key='[KGISWardID]' value='[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A].[KGISWardID]' />
+            <map key='[KGISWardName (Bengaluru_UHI_Master_2001_2025.csv)]' value='[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C].[KGISWardName]' />
+            <map key='[KGISWardName]' value='[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A].[KGISWardName]' />
+            <map key='[KGISWardNo (Bengaluru_UHI_Master_2001_2025.csv)]' value='[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C].[KGISWardNo]' />
+            <map key='[KGISWardNo]' value='[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A].[KGISWardNo]' />
+            <map key='[LGD_WardCode]' value='[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A].[LGD_WardCode]' />
+            <map key='[Mean_EVI]' value='[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C].[Mean_EVI]' />
+            <map key='[Mean_NDBI]' value='[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C].[Mean_NDBI]' />
+            <map key='[Mean_NDVI]' value='[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C].[Mean_NDVI]' />
+            <map key='[Night_LST_C]' value='[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C].[Night_LST_C]' />
+            <map key='[Night_UHI_Anomaly_C]' value='[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C].[Night_UHI_Anomaly_C]' />
+            <map key='[Year]' value='[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C].[Year]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>KGISWardID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[KGISWardID]</local-name>
+              <parent-name>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</parent-name>
+              <remote-alias>KGISWardID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>BBMP_Wards.geojson</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>243</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KGISWardCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[KGISWardCode]</local-name>
+              <parent-name>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</parent-name>
+              <remote-alias>KGISWardCode</remote-alias>
+              <ordinal>1</ordinal>
+              <family>BBMP_Wards.geojson</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>243</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LGD_WardCode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LGD_WardCode]</local-name>
+              <parent-name>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</parent-name>
+              <remote-alias>LGD_WardCode</remote-alias>
+              <ordinal>2</ordinal>
+              <family>BBMP_Wards.geojson</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>199</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KGISWardNo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[KGISWardNo]</local-name>
+              <parent-name>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</parent-name>
+              <remote-alias>KGISWardNo</remote-alias>
+              <ordinal>3</ordinal>
+              <family>BBMP_Wards.geojson</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>243</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KGISWardName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[KGISWardName]</local-name>
+              <parent-name>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</parent-name>
+              <remote-alias>KGISWardName</remote-alias>
+              <ordinal>4</ordinal>
+              <family>BBMP_Wards.geojson</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>243</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KGISTownCode</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[KGISTownCode]</local-name>
+              <parent-name>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</parent-name>
+              <remote-alias>KGISTownCode</remote-alias>
+              <ordinal>5</ordinal>
+              <family>BBMP_Wards.geojson</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Geometry</remote-name>
+              <remote-type>128</remote-type>
+              <local-name>[Geometry]</local-name>
+              <parent-name>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</parent-name>
+              <remote-alias>Geometry</remote-alias>
+              <ordinal>6</ordinal>
+              <family>BBMP_Wards.geojson</family>
+              <local-type>spatial</local-type>
+              <aggregation>Collect</aggregation>
+              <approx-count>243</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KGISWardNo</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[KGISWardNo (Bengaluru_UHI_Master_2001_2025.csv)]</local-name>
+              <parent-name>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</parent-name>
+              <remote-alias>KGISWardNo</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Bengaluru_UHI_Master_2001_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>258</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KGISWardName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[KGISWardName (Bengaluru_UHI_Master_2001_2025.csv)]</local-name>
+              <parent-name>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</parent-name>
+              <remote-alias>KGISWardName</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Bengaluru_UHI_Master_2001_2025.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>258</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>KGISWardID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[KGISWardID (Bengaluru_UHI_Master_2001_2025.csv)]</local-name>
+              <parent-name>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</parent-name>
+              <remote-alias>KGISWardID</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Bengaluru_UHI_Master_2001_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>258</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Bengaluru_UHI_Master_2001_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day_LST_C</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Day_LST_C]</local-name>
+              <parent-name>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</parent-name>
+              <remote-alias>Day_LST_C</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Bengaluru_UHI_Master_2001_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>777</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Night_LST_C</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Night_LST_C]</local-name>
+              <parent-name>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</parent-name>
+              <remote-alias>Night_LST_C</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Bengaluru_UHI_Master_2001_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>677</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cooling_Drop_C</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Cooling_Drop_C]</local-name>
+              <parent-name>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</parent-name>
+              <remote-alias>Cooling_Drop_C</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Bengaluru_UHI_Master_2001_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>871</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mean_NDVI</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Mean_NDVI]</local-name>
+              <parent-name>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</parent-name>
+              <remote-alias>Mean_NDVI</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Bengaluru_UHI_Master_2001_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1796</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mean_EVI</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Mean_EVI]</local-name>
+              <parent-name>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</parent-name>
+              <remote-alias>Mean_EVI</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Bengaluru_UHI_Master_2001_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1464</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mean_NDBI</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Mean_NDBI]</local-name>
+              <parent-name>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</parent-name>
+              <remote-alias>Mean_NDBI</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Bengaluru_UHI_Master_2001_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1745</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day_UHI_Anomaly_C</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Day_UHI_Anomaly_C]</local-name>
+              <parent-name>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</parent-name>
+              <remote-alias>Day_UHI_Anomaly_C</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Bengaluru_UHI_Master_2001_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>445</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Night_UHI_Anomaly_C</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Night_UHI_Anomaly_C]</local-name>
+              <parent-name>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</parent-name>
+              <remote-alias>Night_UHI_Anomaly_C</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Bengaluru_UHI_Master_2001_2025.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>486</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#2b9bff'>
+              <bucket>&quot;[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Cooling_Drop_C:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.15cg6ld1mk24qw108r79a1hjem1g].[sum:Cooling_Drop_C:qk]&quot;</bucket>
+            </map>
+            <map to='#ff4b2b'>
+              <bucket>&quot;[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Night_LST_C:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='BBMP_Wards.geojson' id='BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A'>
+            <properties context=''>
+              <relation connection='ogrdirect.1pzekyw1pngg1x1452st80vxmnuf' name='BBMP_Wards.geojson' table='[BBMP_Wards.geojson]' type='table'>
+                <columns>
+                  <column datatype='integer' name='KGISWardID' ordinal='0' />
+                  <column datatype='string' name='KGISWardCode' ordinal='1' />
+                  <column datatype='integer' name='LGD_WardCode' ordinal='2' />
+                  <column datatype='string' name='KGISWardNo' ordinal='3' />
+                  <column datatype='string' name='KGISWardName' ordinal='4' />
+                  <column datatype='string' name='KGISTownCode' ordinal='5' />
+                  <column datatype='spatial' name='Geometry' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A' table='[Extract].[BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A]' type='table' />
+            </properties>
+          </object>
+          <object caption='Bengaluru_UHI_Master_2001_2025.csv' id='Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C'>
+            <properties context=''>
+              <relation connection='textscan.1h4xvsh1d0ry0b15xj6q50re9od2' name='Bengaluru_UHI_Master_2001_2025.csv' table='[Bengaluru_UHI_Master_2001_2025#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='KGISWardNo' ordinal='0' />
+                  <column datatype='string' name='KGISWardName' ordinal='1' />
+                  <column datatype='integer' name='KGISWardID' ordinal='2' />
+                  <column datatype='integer' name='Year' ordinal='3' />
+                  <column datatype='real' name='Day_LST_C' ordinal='4' />
+                  <column datatype='real' name='Night_LST_C' ordinal='5' />
+                  <column datatype='real' name='Cooling_Drop_C' ordinal='6' />
+                  <column datatype='real' name='Mean_NDVI' ordinal='7' />
+                  <column datatype='real' name='Mean_EVI' ordinal='8' />
+                  <column datatype='real' name='Mean_NDBI' ordinal='9' />
+                  <column datatype='real' name='Day_UHI_Anomaly_C' ordinal='10' />
+                  <column datatype='real' name='Night_UHI_Anomaly_C' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C' table='[Extract].[Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[KGISWardNo]' />
+              <expression op='STR([KGISWardNo (Bengaluru_UHI_Master_2001_2025.csv)])' />
+            </expression>
+            <first-end-point object-id='BBMP_Wards.geojson_03091A6D5A9A4E839AA7F6E5B0444C5A' />
+            <second-end-point object-id='Bengaluru_UHI_Master_2001_2025.csv_E01F5190A4CA4C4ABB6E71E0ABEFF32C' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_D0CD87C95F98464DA85779CB20F39B3C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 2 - Nocturnal Heat Trap' type='sheet' worksheet='Animated Ward Night UHI Map' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 2 - Nocturnal Heat Trap' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='25-Year Nighttime Heat Trap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BBMP_Wards.geojson+ (Multiple Connections)' name='federated.15cg6ld1mk24qw108r79a1hjem1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15cg6ld1mk24qw108r79a1hjem1g'>
+            <column caption='Cooling Drop C' datatype='real' name='[Cooling_Drop_C]' role='measure' type='quantitative' />
+            <column caption='Night LST C' datatype='real' name='[Night_LST_C]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Cooling_Drop_C]' derivation='Avg' name='[avg:Cooling_Drop_C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Night_LST_C]' derivation='Avg' name='[avg:Night_LST_C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Cooling_Drop_C:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[:Measure Names]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Night_LST_C:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[:Measure Names]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Cooling_Drop_C:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[:Measure Names]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='78' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Night_LST_C:qk] + [federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Cooling_Drop_C:qk])</rows>
+        <cols>[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{201938C4-A6DC-450D-8D3D-F5CF7D2687AC}' />
+    </worksheet>
+    <worksheet name='Animated Ward Night UHI Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BBMP_Wards.geojson+ (Multiple Connections)' name='federated.15cg6ld1mk24qw108r79a1hjem1g' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.15cg6ld1mk24qw108r79a1hjem1g'>
+            <column caption='Cooling Drop C' datatype='real' name='[Cooling_Drop_C]' role='measure' type='quantitative' />
+            <column caption='Day LST C' datatype='real' name='[Day_LST_C]' role='dimension' type='quantitative' />
+            <column datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column caption='KGIS Ward Name' datatype='string' name='[KGISWardName]' role='dimension' type='nominal' />
+            <column caption='Mean NDBI' datatype='real' name='[Mean_NDBI]' role='measure' type='quantitative' />
+            <column caption='Mean NDVI' datatype='real' name='[Mean_NDVI]' role='measure' type='quantitative' />
+            <column caption='Night LST C' datatype='real' name='[Night_LST_C]' role='measure' type='quantitative' />
+            <column caption='Night UHI Anomaly C' datatype='real' name='[Night_UHI_Anomaly_C]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[KGISWardName]' derivation='Attribute' name='[attr:KGISWardName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cooling_Drop_C]' derivation='Avg' name='[avg:Cooling_Drop_C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Day_LST_C]' derivation='Avg' name='[avg:Day_LST_C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mean_NDBI]' derivation='Avg' name='[avg:Mean_NDBI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mean_NDVI]' derivation='Avg' name='[avg:Mean_NDVI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Night_LST_C]' derivation='Avg' name='[avg:Night_LST_C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Night_UHI_Anomaly_C]' derivation='Avg' name='[avg:Night_UHI_Anomaly_C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[KGISWardName]' derivation='None' name='[none:KGISWardName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' center='0.0' field='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Night_UHI_Anomaly_C:qk]' max='2.0' min='-2.5' palette='tableau-map-temperatur' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Night_UHI_Anomaly_C:qk]' />
+              <lod column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[clct:Geometry:nk]' />
+              <lod column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:KGISWardName:nk]' />
+              <tooltip column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[attr:KGISWardName:nk]' />
+              <tooltip column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Day_LST_C:qk]' />
+              <tooltip column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Night_LST_C:qk]' />
+              <tooltip column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Cooling_Drop_C:qk]' />
+              <tooltip column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Mean_NDVI:qk]' />
+              <tooltip column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Mean_NDBI:qk]' />
+              <geometry column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[clct:Geometry:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.15cg6ld1mk24qw108r79a1hjem1g].[Latitude (generated)]</rows>
+        <cols>[federated.15cg6ld1mk24qw108r79a1hjem1g].[Longitude (generated)]</cols>
+        <pages>
+          <column>[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:Year:ok]</column>
+        </pages>
+      </table>
+      <simple-id uuid='{29F71226-1926-4187-9D18-F4ABAB8F98FB}' />
+    </worksheet>
+    <worksheet name='KPI 1 - Night Warming'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BBMP_Wards.geojson+ (Multiple Connections)' name='federated.15cg6ld1mk24qw108r79a1hjem1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15cg6ld1mk24qw108r79a1hjem1g'>
+            <column caption='KPI 1 Value' datatype='string' name='[Calculation_0736672929054729]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;+1.25°C&quot;' />
+            </column>
+            <column-instance column='[Calculation_0736672929054729]' derivation='None' name='[none:Calculation_0736672929054729:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:Calculation_0736672929054729:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontalignment='0' fontcolor='#e15759' fontname='Consolas,Courier New,monospace' fontsize='22'>▲ +1.25°C</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run bold='true' fontalignment='0' fontcolor='#898989' fontname='Consolas,Courier New,monospace'>NIGHTTIME LST RISE</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0' fontcolor='#c0c0c0' fontname='Consolas,Courier New,monospace' fontsize='8'>2001–05 (23.7°C) → 2021–25 (25.0°C)</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D56A24C7-A5EF-47DF-BF6F-EBB71EF9F482}' />
+    </worksheet>
+    <worksheet name='KPI 2 - Cooling Collapse'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BBMP_Wards.geojson+ (Multiple Connections)' name='federated.15cg6ld1mk24qw108r79a1hjem1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15cg6ld1mk24qw108r79a1hjem1g'>
+            <column caption='KPI 2 Value' datatype='string' name='[Calculation_0736672929726474]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;-29.7%&quot;' />
+            </column>
+            <column-instance column='[Calculation_0736672929726474]' derivation='None' name='[none:Calculation_0736672929726474:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:Calculation_0736672929726474:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontalignment='0' fontcolor='#f28e2b' fontname='Consolas,Courier New,monospace' fontsize='22'>▼ −29.7%</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run bold='true' fontalignment='0' fontcolor='#898989' fontname='Consolas,Courier New,monospace'>OVERNIGHT COOLING COLLAPSE</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0' fontcolor='#b4b4b4' fontname='Consolas,Courier New,monospace' fontsize='8'>Diurnal drop fell from 12.9°C → 9.1°C</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8711D406-1870-4E0A-BAE6-D20172BD25E2}' />
+    </worksheet>
+    <worksheet name='KPI 3 - Construction Jump'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BBMP_Wards.geojson+ (Multiple Connections)' name='federated.15cg6ld1mk24qw108r79a1hjem1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15cg6ld1mk24qw108r79a1hjem1g'>
+            <column caption='KPI 3 Value' datatype='string' name='[Calculation_0736672930172939]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;+6.36°C&quot;' />
+            </column>
+            <column-instance column='[Calculation_0736672930172939]' derivation='None' name='[none:Calculation_0736672930172939:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:Calculation_0736672930172939:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontalignment='0' fontcolor='#e50914' fontname='Consolas,Courier New,monospace' fontsize='22'>▲ +6.36°C</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run bold='true' fontalignment='0' fontcolor='#898989' fontname='Consolas,Courier New,monospace'>NEW CONSTRUCTION UHI JUMP</run>
+                <run fontalignment='0'>Æ&#10;</run>
+                <run fontalignment='0' fontcolor='#b4b4b4' fontname='Consolas,Courier New,monospace' fontsize='8'>240m Blocks: Green replaced by Concrete</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{593FE34B-529D-4F60-A6BA-BEBFF083C74A}' />
+    </worksheet>
+    <worksheet name='KPI Nighttime Warming'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BBMP_Wards.geojson+ (Multiple Connections)' name='federated.15cg6ld1mk24qw108r79a1hjem1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15cg6ld1mk24qw108r79a1hjem1g'>
+            <column caption='KPI Text' datatype='string' name='[Calculation_0736672928493576]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;+1.25°C Nighttime Rise | -29.7% Cooling Drop | +6.36°C New Construction Jump&quot;' />
+            </column>
+            <column-instance column='[Calculation_0736672928493576]' derivation='None' name='[none:Calculation_0736672928493576:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:Calculation_0736672928493576:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='20'>&lt;</run>
+                <run bold='true' fontsize='20'>[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:Calculation_0736672928493576:nk]</run>
+                <run bold='true' fontsize='20'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E4890B73-A81F-4F64-B023-DA6A62645084}' />
+    </worksheet>
+    <worksheet name='Warming Wards Ranking'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BBMP_Wards.geojson+ (Multiple Connections)' name='federated.15cg6ld1mk24qw108r79a1hjem1g' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15cg6ld1mk24qw108r79a1hjem1g'>
+            <column caption='KGISWardName (Bengaluru UHI Master 2001 2025.csv)' datatype='string' name='[KGISWardName (Bengaluru_UHI_Master_2001_2025.csv)]' role='dimension' type='nominal' />
+            <column caption='KGIS Ward Name' datatype='string' name='[KGISWardName]' role='dimension' type='nominal' />
+            <column caption='Mean NDVI' datatype='real' name='[Mean_NDVI]' role='measure' type='quantitative' />
+            <column caption='Night LST C' datatype='real' name='[Night_LST_C]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Mean_NDVI]' derivation='Avg' name='[avg:Mean_NDVI:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Night_LST_C]' derivation='Avg' name='[avg:Night_LST_C:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[KGISWardName (Bengaluru_UHI_Master_2001_2025.csv)]' derivation='None' name='[none:KGISWardName (Bengaluru_UHI_Master_2001_2025.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[KGISWardName]' derivation='None' name='[none:KGISWardName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:KGISWardName:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([Night_LST_C])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:KGISWardName:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:Year:qk]' included-values='in-range'>
+            <min>2021</min>
+            <max>2025</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:KGISWardName (Bengaluru_UHI_Master_2001_2025.csv):nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Night_LST_C:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:Year:qk]</column>
+            <column>[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:KGISWardName:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Mean_NDVI:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#24693d</color>
+                <color>#2e7347</color>
+                <color>#397d52</color>
+                <color>#46875e</color>
+                <color>#54916a</color>
+                <color>#649b78</color>
+                <color>#74a686</color>
+                <color>#86b095</color>
+                <color>#99baa5</color>
+                <color>#adc4b5</color>
+                <color>#c2cec6</color>
+                <color>#d9d9d9</color>
+                <color>#d5c3c8</color>
+                <color>#d1afb7</color>
+                <color>#cd9ba7</color>
+                <color>#c98798</color>
+                <color>#c57489</color>
+                <color>#c1627b</color>
+                <color>#bd516d</color>
+                <color>#b9405f</color>
+                <color>#b53052</color>
+                <color>#b12046</color>
+                <color>#ae123a</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Mean_NDVI:qk]' />
+              <text column='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Night_LST_C:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:KGISWardName (Bengaluru_UHI_Master_2001_2025.csv):nk]</rows>
+        <cols>[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Night_LST_C:qk]</cols>
+      </table>
+      <simple-id uuid='{6E029D81-C705-4C34-9F5A-BAC77D7D6416}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2 - Nocturnal Heat Trap'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='BBMP_Wards.geojson+ (Multiple Connections)' name='federated.15cg6ld1mk24qw108r79a1hjem1g' />
+      </datasources>
+      <datasource-dependencies datasource='federated.15cg6ld1mk24qw108r79a1hjem1g'>
+        <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+        <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98098' id='8' param='horz' type-v2='layout-flow' w='98568' x='716' y='951'>
+            <zone h='98098' id='6' type-v2='layout-basic' w='84257' x='716' y='951'>
+              <zone h='16566' id='3' name='KPI Nighttime Warming' w='84257' x='716' y='951'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='81532' id='5' name='Animated Ward Night UHI Map' w='31648' x='716' y='17517'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='40766' id='11' name='25-Year Nighttime Heat Trap' w='52609' x='32364' y='17517'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='40766' id='12' name='Warming Wards Ranking' w='52609' x='32364' y='58283'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98098' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='14311' x='84973' y='951'>
+              <zone h='8680' id='9' name='Animated Ward Night UHI Map' pane-specification-id='0' param='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Night_UHI_Anomaly_C:qk]' type-v2='color' w='14311' x='84973' y='951'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='14150' id='10' name='Animated Ward Night UHI Map' synchronized='1' type-v2='currpage' w='14311' x='84973' y='9631'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8680' id='13' name='Warming Wards Ranking' param='[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='14311' x='84973' y='23781'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8680' id='14' name='Warming Wards Ranking' pane-specification-id='0' param='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Mean_NDVI:qk]' type-v2='color' w='14311' x='84973' y='32461'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98098' id='15' param='vert' type-v2='layout-flow' w='98568' x='716' y='951'>
+                <zone fixed-size='124' h='16566' id='3' is-fixed='true' name='KPI Nighttime Warming' w='84257' x='716' y='951'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='81532' id='5' is-fixed='true' name='Animated Ward Night UHI Map' w='31648' x='716' y='17517'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8680' id='9' name='Animated Ward Night UHI Map' pane-specification-id='0' param='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Night_UHI_Anomaly_C:qk]' type-v2='color' w='14311' x='84973' y='951'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40766' id='11' is-fixed='true' name='25-Year Nighttime Heat Trap' w='52609' x='32364' y='17517'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8680' id='13' name='Warming Wards Ranking' param='[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='14311' x='84973' y='23781'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40766' id='12' is-fixed='true' name='Warming Wards Ranking' w='52609' x='32364' y='58283'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8680' id='14' name='Warming Wards Ranking' pane-specification-id='0' param='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Mean_NDVI:qk]' type-v2='color' w='14311' x='84973' y='32461'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14150' id='10' name='Animated Ward Night UHI Map' synchronized='1' type-v2='currpage' w='14311' x='84973' y='9631'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D1081D81-DB1D-40F5-967E-006C65CE60A9}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' show-side-pane='false' source-height='37'>
+    <window class='worksheet' name='25-Year Nighttime Heat Trap'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{AD7F46D5-4791-46A2-AD07-8C28BC2A71E2}' />
+    </window>
+    <window class='worksheet' name='Animated Ward Night UHI Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Night_UHI_Anomaly_C:qk]' type='color' />
+            <card type='currpage' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>2025</bucket>
+          </multibucket>
+        </current-page>
+      </viewpoint>
+      <simple-id uuid='{6B26843E-93FD-43AE-8CE0-959F6BE90A0C}' />
+    </window>
+    <window class='worksheet' name='Warming Wards Ranking'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.15cg6ld1mk24qw108r79a1hjem1g].[none:Year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.15cg6ld1mk24qw108r79a1hjem1g].[avg:Mean_NDVI:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{99211613-4F64-438A-8C59-2EC7C3679656}' />
+    </window>
+    <window class='worksheet' name='KPI Nighttime Warming'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E8CEAE0B-0E61-42A8-96C6-1C369684FE06}' />
+    </window>
+    <window class='worksheet' name='KPI 1 - Night Warming'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{CA85A9D6-4002-4D5A-B230-6CE3CEF5C61D}' />
+    </window>
+    <window class='worksheet' name='KPI 2 - Cooling Collapse'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{20783378-8F59-40FB-8098-CBB41F5F49F3}' />
+    </window>
+    <window class='worksheet' name='KPI 3 - Construction Jump'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{0694768E-E647-4ADF-8510-C2DA82EC3A6F}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2 - Nocturnal Heat Trap'>
+      <viewpoints>
+        <viewpoint name='25-Year Nighttime Heat Trap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Animated Ward Night UHI Map'>
+          <current-page>
+            <multibucket>
+              <bucket>2025</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Nighttime Warming'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Warming Wards Ranking' />
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{0FA47555-2736-457D-B0E3-4B05CD857292}' />
+    </window>
+  </windows>
+</workbook>
