@@ -5,3 +5,6 @@ Thumbs.db
 .venv/
 venv/
 *.tmp
+~$*.pptx
+~*.twbr
+eda_outputs/_title_hero.png
